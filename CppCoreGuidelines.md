@@ -14949,7 +14949,7 @@ Testing - often to an extreme extent - is essential.
 
 ##### Enforcement
 
-Have strong rules for re-testing in place that covers any change in hardware, operating system, compiler, and libraries.
+Have strong rules for re-testing in place that cover any change in hardware, operating system, compiler, and libraries.
 
 
 ### <a name="Rconc-literature"></a>CP.102: Carefully study the literature
