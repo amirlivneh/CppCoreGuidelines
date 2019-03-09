@@ -908,7 +908,7 @@ The date is validated twice (by the `Date` constructor) and passed as a characte
 ##### Example
 
 Excess checking can be costly.
-There are cases where checking early is dumb because you may not ever need the value, or may only need part of the value that is more easily checked than the whole.  Similarly, don't add validity checks that change the asymptotic behavior of your interface (e.g., don't add a `O(n)` check to an interface with an average complexity of `O(1)`).
+There are cases where checking early is dumb because you may not ever need the value, or may only need part of the value that is more easily checked than the whole.  Similarly, don't add validity checks that change the asymptotic behavior of your interface (e.g., don't add an `O(n)` check to an interface with an average complexity of `O(1)`).
 
     class Jet {    // Physics says: e * e < x * x + y * y + z * z
         float x;
@@ -6064,7 +6064,7 @@ The one-in-a-million argument against `if (this == &a) return *this;` tests from
 
 ##### Note
 
-There is no known general way of avoiding a `if (this == &a) return *this;` test for a move assignment and still get a correct answer (i.e., after `x = x` the value of `x` is unchanged).
+There is no known general way of avoiding an `if (this == &a) return *this;` test for a move assignment and still get a correct answer (i.e., after `x = x` the value of `x` is unchanged).
 
 ##### Note
 
@@ -14818,7 +14818,7 @@ This section looks at passing messages so that a programmer doesn't have to do e
 Message passing rules summary:
 
 * [CP.60: Use a `future` to return a value from a concurrent task](#Rconc-future)
-* [CP.61: Use a `async()` to spawn a concurrent task](#Rconc-async)
+* [CP.61: Use an `async()` to spawn a concurrent task](#Rconc-async)
 * message queues
 * messaging libraries
 
@@ -14846,7 +14846,7 @@ There is no explicit locking and both correct (value) return and error (exceptio
 
 ???
 
-### <a name="Rconc-async"></a>CP.61: Use a `async()` to spawn a concurrent task
+### <a name="Rconc-async"></a>CP.61: Use an `async()` to spawn a concurrent task
 
 ##### Reason
 
